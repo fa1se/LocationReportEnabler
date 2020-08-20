@@ -8,7 +8,7 @@ With the power of Magisk and [resetprop](https://github.com/topjohnwu/Magisk/blo
 
 * `gsm.sim.operator.numeric`, default to `310680`
 * `gsm.sim.operator.iso-country`, default to `us`
-* `gsm.sim.operator.alpha`, default `AT&T`
+* `gsm.sim.operator.alpha`, default to `AT&T`
 
 Dual SIM is also supported.
 
