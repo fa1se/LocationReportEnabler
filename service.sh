@@ -4,19 +4,19 @@ ALPHA='AT\&T'
 ISO_COUNTRY='us'
 NUMERIC='310680'
 
+PROP_NAME_ALPHA='gsm.sim.operator.alpha'
+PROP_NAME_ISO_COUNTRY='gsm.sim.operator.iso-country'
+PROP_NAME_NUMERIC='gsm.sim.operator.numeric'
+
 set_prop() {
-  REPORT_ALPHA=$(resetprop gsm.sim.operator.alpha)
-  TARGET_ALPHA=$(echo $REPORT_ALPHA | sed -r "s/[^,]{1,}/$ALPHA/g")
-  if [ "$REPORT_ALPHA" != "$TARGET_ALPHA" ]; then
-    resetprop gsm.sim.operator.alpha $TARGET_ALPHA; fi
-  REPORT_ISO_COUNTRY=$(resetprop gsm.sim.operator.iso-country)
-  TARGET_ISO_COUNTRY=$(echo $REPORT_ISO_COUNTRY | sed -r "s/[^,]{1,}/$ISO_COUNTRY/g")
-  if [ "$REPORT_ISO_COUNTRY" != "$TARGET_ISO_COUNTRY" ]; then
-    resetprop gsm.sim.operator.iso-country $TARGET_ISO_COUNTRY; fi
-  REPORT_NUMERIC=$(resetprop gsm.sim.operator.numeric)
-  TARGET_NUMERIC=$(echo $REPORT_NUMERIC | sed -r "s/[^,]{1,}/$NUMERIC/g")
-  if [ "$REPORT_NUMERIC" != "$TARGET_NUMERIC" ]; then
-    resetprop gsm.sim.operator.numeric $TARGET_NUMERIC; fi
+  for PROP in ALPHA ISO_COUNTRY NUMERIC; do
+    eval PROP_NAME=$"PROP_NAME_$PROP" VALUE=$"$PROP"
+    REPORT_VALUE=$(resetprop $PROP_NAME)
+    TARGET_VALUE=$(echo $REPORT_VALUE | sed -r "s/[^,]{1,}/$VALUE/g")
+    if [ "$REPORT_VALUE" != "$TARGET_VALUE" ]; then
+      resetprop $PROP_NAME $TARGET_VALUE
+    fi
+  done
 }
 
 for i in $(seq 1 60); do 
@@ -26,4 +26,3 @@ done
 while true; do
   set_prop; sleep 180
 done
-
