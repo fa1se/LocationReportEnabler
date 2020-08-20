@@ -3,4 +3,4 @@ name=Location Report Enabler
 version=1.0
 versionCode=1
 author=fa1se
-description=Fake gsm.sim.operator.[alpha|iso-country|numeric]
+description=Fake gsm.sim.operator properties
