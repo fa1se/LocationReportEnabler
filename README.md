@@ -10,11 +10,11 @@ With the power of Magisk and [resetprop](https://github.com/topjohnwu/Magisk/blo
 * `gsm.sim.operator.iso-country`, default to `us`
 * `gsm.sim.operator.alpha`, default `AT&T`
 
-Dual SIM is also supported. See more MCCs and MNCs from [here](https://www.mcc-mnc.com/).
+Dual SIM is also supported.
 
 ## Customize
 
-Change these variables in `service.sh` if you want a different value:
+Change these variables in `service.sh` if you want a different value(see more MCCs and MNCs from [here](https://www.mcc-mnc.com/)):
 
 ```sh
 ALPHA='AT\&T' # sed: escape if necessary
