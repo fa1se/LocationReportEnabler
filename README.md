@@ -14,7 +14,7 @@ Dual SIM is also supported.
 
 ## Customize
 
-Change these variables in `service.sh` if you want a different value(see more MCCs and MNCs from [here](https://www.mcc-mnc.com/)):
+Change these variables in `service.sh`(see more MCCs and MNCs from [here](https://www.mcc-mnc.com/)):
 
 ```sh
 ALPHA='Verizon' # sed: escape if necessary, eg. 'AT\&T'
