@@ -27,11 +27,11 @@ Or if you want some more complex behavior(eg. different values for different slo
 Unlike [Xposed](https://github.com/GhostFlying/LocationReportEnablerXposed) or [Riru](https://github.com/RikkaApps/Riru-LocationReportEnabler) versions, this module isn't capable of hooking metheds directly. Instead, properties are read periodically and updated if changed by other services.
 
 ```sh
-for i in $(seq 1 ...); do 
-  set_prop; sleep ...
+for i in $(seq 1 20); do 
+  set_prop; sleep 9s
 done
 while true; do
-  set_prop; sleep ...
+  set_prop; sleep 1h
 done
 ```
 
