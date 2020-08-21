@@ -24,7 +24,7 @@ NUMERIC='310013'
 
 Or if you want some more complex behavior(eg. different values for different slots), simply change `set_prop()` to your like.  
 
-Unlike [Xposed](https://github.com/GhostFlying/LocationReportEnablerXposed) or [Riru](https://github.com/RikkaApps/Riru-LocationReportEnabler) versions, this module isn't capable of hooking metheds directly. Instead, properties are read periodically and updated if changed by other services.
+Unlike [Xposed](https://github.com/GhostFlying/LocationReportEnablerXposed) or [Riru](https://github.com/RikkaApps/Riru-LocationReportEnabler) versions, this module isn't capable of hooking metheds. Instead, properties are read periodically and updated if changed by other services.
 
 ```sh
 for i in $(seq 1 20); do 
