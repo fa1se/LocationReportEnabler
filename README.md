@@ -4,7 +4,7 @@
 
 ## How it works
 
-With the power of Magisk and [resetprop](https://github.com/topjohnwu/Magisk/blob/master/docs/tools.md#resetprop), a simple shell script runs in the background to constantly check and update these following properties:
+With the power of Magisk and [resetprop](https://github.com/topjohnwu/Magisk/blob/master/docs/tools.md#resetprop), fake_gsm_sim_operator runs in the background to constantly check and update these following properties:
 
 * `gsm.sim.operator.numeric`, default to `310680`
 * `gsm.sim.operator.iso-country`, default to `us`
