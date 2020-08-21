@@ -27,12 +27,12 @@ Or if you want some more complex behavior(eg. different values for different slo
 Unlike [Xposed](https://github.com/GhostFlying/LocationReportEnablerXposed) or [Riru](https://github.com/RikkaApps/Riru-LocationReportEnabler) versions, this module isn't capable of hooking metheds directly. Instead, properties are read periodically and updated if changed by other services.
 
 ```sh
-for i in $(seq 1 60); do
-  set_prop; sleep 1.5
+for i in $(seq 1 ...); do 
+  set_prop; sleep ...
 done
 while true; do
-  set_prop; sleep 180
+  set_prop; sleep ...
 done
 ```
 
-By default, properties are visited frequently right after boot time and every 3 minute afterwards. Change this if you want, but with lower frequency the script tends to malfunction.
+By default, properties are visited frequently right after boot time and less so afterwards. Change this if you want, but with lower frequency the script tends to malfunction.
