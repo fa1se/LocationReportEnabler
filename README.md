@@ -1,6 +1,6 @@
 # fake-gsm-sim-operator
 
-Location Report Enabler with Magisk.
+[Location Report Enabler](https://github.com/GhostFlying/LocationReportEnabler) with Magisk.
 
 ## How it works
 
