@@ -35,4 +35,4 @@ while true; do
 done
 ```
 
-By default, properties are visited frequently right after boot time and less so afterwards. Change this if you want, but with lower frequency the script tends to malfunction.
+By default, properties are visited frequently right after at startup and less so afterwards. These can be altered, but with lower frequency the script tends to malfunction.
