@@ -22,7 +22,7 @@ ISO_COUNTRY='us'
 NUMERIC='310013'
 ```
 
-Or if you want some more complex behavior(eg. different values for different slots), simply change `set_prop()` to your like.  
+Or if you want something more complicated(eg. dual SIM with different properties), simply change `set_prop()` to your like.  
 
 Unlike [Xposed](https://github.com/GhostFlying/LocationReportEnablerXposed) or [Riru](https://github.com/RikkaApps/Riru-LocationReportEnabler) versions, this module isn't capable of hooking metheds. Instead, properties are read periodically and updated if changed by other services.
 
