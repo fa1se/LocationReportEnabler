@@ -17,9 +17,9 @@ Dual SIM is also supported.
 Change these variables in `service.sh` if you want a different value(see more MCCs and MNCs from [here](https://www.mcc-mnc.com/)):
 
 ```sh
-ALPHA='AT\&T' # sed: escape if necessary
+ALPHA='Verizon' # sed: escape if necessary, eg. 'AT\$T'
 ISO_COUNTRY='us'
-NUMERIC='310680'
+NUMERIC='310013'
 ```
 
 Or if you want some more complex behavior(eg. different values for different slots), simply modify `set_prop()` to your like.  
