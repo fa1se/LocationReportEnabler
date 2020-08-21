@@ -19,10 +19,10 @@ set_prop() {
   done
 }
 
-for i in $(seq 1 60); do 
-  set_prop; sleep 1.5
+for i in $(seq 1 20); do 
+  set_prop; sleep 9s
 done
 
 while true; do
-  set_prop; sleep 180
+  set_prop; sleep 1h
 done
