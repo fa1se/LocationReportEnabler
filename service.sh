@@ -1,8 +1,8 @@
 #! /system/bin/sh
 
-ALPHA='AT\&T'
+ALPHA='Verizon'
 ISO_COUNTRY='us'
-NUMERIC='310680'
+NUMERIC='310013'
 
 PROP_NAME_ALPHA='gsm.sim.operator.alpha'
 PROP_NAME_ISO_COUNTRY='gsm.sim.operator.iso-country'
