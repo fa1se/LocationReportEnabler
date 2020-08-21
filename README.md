@@ -6,9 +6,9 @@
 
 With the power of Magisk and [resetprop](https://github.com/topjohnwu/Magisk/blob/master/docs/tools.md#resetprop), fake_gsm_sim_operator runs in the background to constantly check and update these following properties:
 
-* `gsm.sim.operator.numeric`, default to `310680`
+* `gsm.sim.operator.numeric`, default to `310013`
 * `gsm.sim.operator.iso-country`, default to `us`
-* `gsm.sim.operator.alpha`, default to `AT&T`
+* `gsm.sim.operator.alpha`, default to `Verizon`
 
 Dual SIM is also supported.
 
@@ -17,7 +17,7 @@ Dual SIM is also supported.
 Change these variables in `service.sh` if you want a different value(see more MCCs and MNCs from [here](https://www.mcc-mnc.com/)):
 
 ```sh
-ALPHA='Verizon' # sed: escape if necessary, eg. 'AT\$T'
+ALPHA='Verizon' # sed: escape if necessary, eg. 'AT\&T'
 ISO_COUNTRY='us'
 NUMERIC='310013'
 ```
