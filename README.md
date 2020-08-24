@@ -4,7 +4,7 @@
 
 ## How it works
 
-Using [resetprop](https://github.com/topjohnwu/Magisk/blob/master/docs/tools.md#resetprop), this module runs in the background to constantly check and update these following properties:
+This module runs in the background to constantly check and update these following properties using [resetprop](https://github.com/topjohnwu/Magisk/blob/master/docs/tools.md#resetprop):
 
 * `gsm.sim.operator.numeric`, default to `310013`
 * `gsm.sim.operator.iso-country`, default to `us`
