@@ -10,4 +10,4 @@ With the power of [resetprop](https://github.com/topjohnwu/Magisk/blob/master/do
 - `gsm.sim.operator.iso-country`, set to `us`
 - `gsm.sim.operator.alpha`, set to `Verizon`
 
-*You may also want to clear the data of Google Play services the first time you flash this.*
+*You may also want to clear the data of Google Play services.*
