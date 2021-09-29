@@ -1,13 +1,15 @@
-# LocationReportEnabler
+# Location Report Enabler
 
 [Location Report Enabler](https://github.com/GhostFlying/LocationReportEnabler) with Magisk.
 
 ## How it works
 
-With the power of [resetprop](https://github.com/topjohnwu/Magisk/blob/master/docs/tools.md#resetprop), this module runs a simple [script](service.sh) to constantly update these following properties:
+This module will start a cron job to constantly update these properties using [resetprop](https://github.com/topjohnwu/Magisk/blob/master/docs/tools.md#resetprop):
 
-- `gsm.sim.operator.numeric`, set to `310013`
-- `gsm.sim.operator.iso-country`, set to `us`
-- `gsm.sim.operator.alpha`, set to `Verizon`
+- `[gsm.sim.operator.numeric]: [310030]`
+- `[gsm.sim.operator.iso-country]: [us]`
 
-*You may also want to clear the data of Google Play services.*
+Also on first reboot after installation, data of the following packages will be cleared:
+
+- `com.google.android.gms`
+- `com.google.android.gsf`
